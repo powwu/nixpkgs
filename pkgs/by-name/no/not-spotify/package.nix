@@ -109,7 +109,7 @@ in
   stdenv.mkDerivation {
     inherit version;
 
-    pname = "spotify";
+    pname = "not-spotify";
     # fetch from snapcraft instead of the debian repository most repos fetch from.
     # That is a bit more cumbersome. But the debian repository only keeps the last
     # two versions, while snapcraft should provide versions indefinitely:
