@@ -108,6 +108,7 @@
 in
   stdenv.mkDerivation {
     inherit version;
+    inherit rev;
 
     pname = "not-spotify";
     # fetch from snapcraft instead of the debian repository most repos fetch from.
@@ -119,8 +120,8 @@ in
     # spotify ourselves:
     # https://community.spotify.com/t5/Desktop-Linux/Redistribute-Spotify-on-Linux-Distributions/td-p/1695334
     src = fetchurl {
-    name = "spotify-${finalAttrs.version}-${finalAttrs.rev}.snap";
-    url = "https://api.snapcraft.io/api/v1/snaps/download/pOBIoZ2LrCB3rDohMxoYGnbN14EHOgD7_${finalAttrs.rev}.snap";
+    name = "spotify-${version}-${rev}.snap";
+    url = "https://api.snapcraft.io/api/v1/snaps/download/pOBIoZ2LrCB3rDohMxoYGnbN14EHOgD7_${rev}.snap";
     hash = "sha512-hdJOko/0EHkPiNgWO+WB3nP+0MO9D2fxgM/X/Ri6fM1ODJxz3XYY84Xf2Ru6iGqdA9XUNRcd/qi+Gfaj9Ez0Ug==";
   };
 
