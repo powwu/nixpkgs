@@ -43,6 +43,9 @@ rustPlatform.buildRustPackage (finalAttrs: {
       desktopName = "toonmux Multicontroller";
       genericName = "Toontown Multicontroller";
       exec = "toonmux";
+      categories = [
+        "Games"
+      ];
     })
   ];
 
