@@ -3,6 +3,7 @@
   fetchFromGitHub,
   rustPlatform,
   makeDesktopItem,
+  copyDesktopItems,
   pkg-config,
   gtk3,
   xdotool,
@@ -20,6 +21,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
 
   nativeBuildInputs = [
     pkg-config
+    copyDesktopItems
   ];
 
   buildInputs = [
