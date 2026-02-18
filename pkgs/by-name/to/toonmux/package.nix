@@ -40,7 +40,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
   desktopItems = [
     (makeDesktopItem {
       name = "toonmux";
-      desktopName = "toonmux Multicontroller";
+      desktopName = "toonmux";
       genericName = "Toontown Multicontroller";
       exec = "toonmux";
       categories = [
