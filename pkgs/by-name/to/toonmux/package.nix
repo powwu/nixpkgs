@@ -10,13 +10,13 @@
 }:
 rustPlatform.buildRustPackage (finalAttrs: {
   pname = "toonmux";
-  version = "0.0.9";
+  version = "0.0.9-powwupatch";
 
   src = fetchFromGitHub {
-    owner = "JonathanHelianthicusDoe";
+    owner = "powwu";
     repo = "toonmux";
-    rev = "4571c53dbcb46c2e27adb94612ab8052dbe9a324";
-    hash = "sha256-GwpU/6JkCb11+FfgNUoFIXerwQSOexn/GlkESRzjKIA=";
+    rev = "f46b14ce79892c6ec0dff68e836c8b4cb38b91f0";
+    hash = "sha256-kYffDGcFdnxsv6xpMS+f2+j/GwZ/EJDrxldwQjBYl8I=";
   };
 
   nativeBuildInputs = [
