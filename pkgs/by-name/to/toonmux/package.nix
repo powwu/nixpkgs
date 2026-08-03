@@ -10,23 +10,25 @@
 }:
 rustPlatform.buildRustPackage (finalAttrs: {
   pname = "toonmux";
-  version = "0.0.9-powwupatch";
+  version = "0.0.10";
 
   src = fetchFromGitHub {
     owner = "powwu";
     repo = "toonmux";
-    rev = "f46b14ce79892c6ec0dff68e836c8b4cb38b91f0";
-    hash = "sha256-kYffDGcFdnxsv6xpMS+f2+j/GwZ/EJDrxldwQjBYl8I=";
+    rev = "8a018b5f9e752cf5131be0ebec088c9a63abeb86";
+    hash = "sha256-IgqJxjXvtd5mkqUK8gLJTdX9KxtZWNADHgZ78LFNOeM=";
   };
 
   nativeBuildInputs = [
     pkg-config
     copyDesktopItems
+    font-awesome
   ];
 
   buildInputs = [
     gtk3
     xdotool
+    font-awesome
   ];
 
   postPatch = ''
