@@ -1,3 +1,4 @@
+
 {
   lib,
   fetchFromGitHub,
@@ -7,12 +8,10 @@
   pkg-config,
   gtk3,
   xdotool,
-  font-awesome,
-  libevdev,
 }:
 rustPlatform.buildRustPackage (finalAttrs: {
   pname = "toonmux";
-  version = "0.0.10";
+  version = "0.0.9-powwupatch";
 
   src = fetchFromGitHub {
     owner = "powwu";
@@ -24,12 +23,10 @@ rustPlatform.buildRustPackage (finalAttrs: {
   nativeBuildInputs = [
     pkg-config
     copyDesktopItems
-    font-awesome
   ];
 
   buildInputs = [
     gtk3
-    libevdev
     xdotool
   ];
 
