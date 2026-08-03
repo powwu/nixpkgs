@@ -8,6 +8,7 @@
   gtk3,
   xdotool,
   font-awesome,
+  libevdev,
 }:
 rustPlatform.buildRustPackage (finalAttrs: {
   pname = "toonmux";
@@ -28,8 +29,8 @@ rustPlatform.buildRustPackage (finalAttrs: {
 
   buildInputs = [
     gtk3
+    libevdev
     xdotool
-    font-awesome
   ];
 
   postPatch = ''
