@@ -16,8 +16,8 @@ rustPlatform.buildRustPackage (finalAttrs: {
   src = fetchFromGitHub {
     owner = "powwu";
     repo = "toonmux";
-    rev = "8a018b5f9e752cf5131be0ebec088c9a63abeb86";
-    hash = "sha256-IgqJxjXvtd5mkqUK8gLJTdX9KxtZWNADHgZ78LFNOeM=";
+    rev = "595642acea6f4b453c2899c29adaa826ba897f4c";
+    hash = "sha256-/gBJWAXlY9DqpZvQKa2mEOlHMSVqH8HAX84u4VnEkLY=";
   };
 
   nativeBuildInputs = [
