@@ -8,10 +8,12 @@
   pkg-config,
   gtk3,
   xdotool,
+  libevdev,
+  font-awesome,
 }:
 rustPlatform.buildRustPackage (finalAttrs: {
   pname = "toonmux";
-  version = "0.0.9-powwupatch";
+  version = "0.0.10-powwupatch";
 
   src = fetchFromGitHub {
     owner = "powwu";
@@ -27,7 +29,9 @@ rustPlatform.buildRustPackage (finalAttrs: {
 
   buildInputs = [
     gtk3
+    libevdev
     xdotool
+    font-awesome  
   ];
 
   postPatch = ''
