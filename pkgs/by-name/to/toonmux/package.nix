@@ -7,6 +7,7 @@
   pkg-config,
   gtk3,
   xdotool,
+  font-awesome,
 }:
 rustPlatform.buildRustPackage (finalAttrs: {
   pname = "toonmux";
