@@ -35,7 +35,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
   ];
 
   postPatch = ''
-    cp -L ${./Cargo.lock} Cargo.lock
+    cp -L --no-preserve=mode ${./Cargo.lock} Cargo.lock
   '';
 
   cargoLock = {
