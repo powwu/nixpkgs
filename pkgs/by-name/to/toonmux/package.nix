@@ -47,7 +47,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
       name = "toonmux";
       desktopName = "toonmux";
       genericName = "Toontown Multicontroller";
-      exec = "toonmux";
+      exec = "toonmux-pe";
       categories = [
         "Utility"
       ];
