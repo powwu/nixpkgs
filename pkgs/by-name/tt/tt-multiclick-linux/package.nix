@@ -19,8 +19,8 @@ stdenv.mkDerivation {
   src = fetchFromGitHub {
     owner = "powwu";
     repo = "tt-multiclick-linux";
-    rev = "9ada7e13d4a6c439308ecf1e8944d7746d7d468b";
-    hash = "sha256-Q96b8f+fxGy/57Q3nYsCifTG1aIvK9XnaUcud+qHcyQ=";
+    rev = "50a03f3c159805286c02227241cb33e596a21544";
+    hash = "sha256-bvuyOEYtIMQJpzczn7CTyUIvX++f58UQgPnEEqJq4HM=";
   };
 
   nativeBuildInputs = [
