@@ -18,8 +18,8 @@ rustPlatform.buildRustPackage (finalAttrs: {
   src = fetchFromGitHub {
     owner = "powwu";
     repo = "toonmux";
-    rev = "595642acea6f4b453c2899c29adaa826ba897f4c";
-    hash = "sha256-/gBJWAXlY9DqpZvQKa2mEOlHMSVqH8HAX84u4VnEkLY=";
+    rev = "37b757f0e8e1b894557bc10a40134733e400a783";
+    hash = "sha256-Mv1gWmyMFz2OREIBEOvSQmliBqYAU5HBWU3Txj+Ha1A=";
   };
 
   nativeBuildInputs = [
@@ -31,7 +31,7 @@ rustPlatform.buildRustPackage (finalAttrs: {
     gtk3
     libevdev
     xdotool
-    font-awesome  
+    font-awesome
   ];
 
   postPatch = ''
