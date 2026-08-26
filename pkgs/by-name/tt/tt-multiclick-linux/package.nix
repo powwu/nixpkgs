@@ -39,6 +39,13 @@ stdenv.mkDerivation {
     libei
   ];
 
+  postPatch = ''
+    substituteInPlace meson.build \
+      --replace-fail \
+        "dependencies: [gtk, evdev, x11, xtst, xi, ei, thread])" \
+        "dependencies: [gtk, evdev, x11, xtst, xi, ei, thread], install: true)"
+  '';
+
   desktopItems = [
     (makeDesktopItem {
       name = "tt-multiclick-linux";
