@@ -19,8 +19,8 @@ stdenv.mkDerivation {
   src = fetchFromGitHub {
     owner = "powwu";
     repo = "tt-multiclick-linux";
-    rev = "93415cce60bce0a44339bc983d80d3e202f9490a";
-    hash = "sha256-qOF4EE2rMn5tf5MUdXcursdNV0pEDHsL8+W8WRPefjo=";
+    rev = "9ada7e13d4a6c439308ecf1e8944d7746d7d468b";
+    hash = "sha256-Q96b8f+fxGy/57Q3nYsCifTG1aIvK9XnaUcud+qHcyQ=";
   };
 
   nativeBuildInputs = [
@@ -38,13 +38,6 @@ stdenv.mkDerivation {
     xorg.libXi
     libei
   ];
-
-  postPatch = ''
-    substituteInPlace meson.build \
-      --replace-fail \
-        "dependencies: [gtk, evdev, x11, xtst, xi, ei, thread])" \
-        "dependencies: [gtk, evdev, x11, xtst, xi, ei, thread], install: true)"
-  '';
 
   desktopItems = [
     (makeDesktopItem {
