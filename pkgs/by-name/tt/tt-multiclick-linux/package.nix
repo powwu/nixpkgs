@@ -33,9 +33,9 @@ stdenv.mkDerivation {
   buildInputs = [
     gtk3
     libevdev
-    xorg.libX11
-    xorg.libXtst
-    xorg.libXi
+    libX11
+    libXtst
+    libXi
     libei
   ];
 
