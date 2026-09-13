@@ -38,8 +38,8 @@
 
 let
   appimage = fetchurl {
-    url = "https://github.com/the-finest-noobs/ToonSuite-releases/releases/download/v1.1.0/Tunetoon-Linux.AppImage";
-    hash = "sha256-GeLL7i2VzepDvCZG6DL27IHzJSkRDXS6DMvpBl4iRgg=";
+    url = "https://github.com/the-finest-noobs/ToonSuite-releases/releases/download/v1.1.4/Tunetoon-Linux.AppImage";
+    hash = "sha256-Z+RXviMLXhrNWlB4TMG44Oi3LRQXyYVksB7v5zq9xXA=";
   };
 
   fhs = buildFHSEnv {
